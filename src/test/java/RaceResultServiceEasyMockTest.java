@@ -35,14 +35,6 @@ public class RaceResultServiceEasyMockTest {
         EasyMock.verify(client);
     }
 
-    @Test
-    public void testSend() {
-
-        raceResultService.setClients(clients);
-        replay(client);
-        raceResultService.send(message);
-        EasyMock.verify(client);
-    }
 
 
     @Test

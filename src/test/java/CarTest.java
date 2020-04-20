@@ -80,7 +80,7 @@ public class CarTest {
     @Test
     public void testDriveTo_DoAnswer() {
         doAnswer((i)  -> {
-            assertEquals(0, i.getArguments().length);
+            assertEquals(1, i.getArguments().length);
             return null;
         }).when(myFerrari).driveTo(anyString());
         myFerrari.driveTo("Kartuzy");
