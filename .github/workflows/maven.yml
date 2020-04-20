@@ -24,3 +24,5 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Codecov
       uses: codecov/codecov-action@v1.0.6
+      with:
+        token: 310d20d6-446e-49ec-9e49-90e2ada786d0
